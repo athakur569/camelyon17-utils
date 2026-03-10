@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "camelyon17-utils"
+version = "0.1.0"
+description = "CAMELYON17 data utilities: stages.csv parsing and center-disjoint splitting"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Abhishek Thakur", email = "a.thakur5690@gmail.com"}]
+requires-python = ">=3.9"
+keywords = ["CAMELYON17", "digital-pathology", "dataset", "splitting"]
+dependencies = ["pandas>=2.0.0", "numpy>=1.24.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
